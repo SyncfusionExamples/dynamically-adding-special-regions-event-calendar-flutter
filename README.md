@@ -1,2 +1,1 @@
-# dynamically-adding-special-regions-event-calendar-flutter
-How to add a special region using onTap, onViewChanged callbacks of the Fluttter event calendar (SfCalendar)?
+**[View document in Syncfusion Flutter Knowledge base](https://www.syncfusion.com/kb/11729/how-to-add-a-special-region-dynamically-using-ontap-onviewchanged-callbacks-of-the-fluttter)**
