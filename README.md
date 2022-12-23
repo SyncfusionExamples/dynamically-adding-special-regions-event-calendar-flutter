@@ -1,16 +1,21 @@
-# dynamically_adding_specialregion
+# How to add a special region dynamically using onTap, onViewChanged callbacks of the Flutter Calendar?
 
-A new Flutter project.
+A quick-start example to help you to add a special region dynamically using onTap, onViewChanged callbacks of the Flutter Calendar.
 
-## Getting Started
+You can add special regions to the Flutter Event Calendar by using the [onViewChanged](), [onTap](https://help.syncfusion.com/flutter/calendar/callbacks#calendar-tap-callback), and [onPressed](https://help.syncfusion.com/flutter/calendar/callbacks#long-press-callback) callbacks.
 
-This project is a starting point for a Flutter application.
+In this sample, the special regions are added to the tapped or long pressed time slots by using the Flutter calendar's 'onViewChanged,' 'onTap,' and 'onpressed' callbacks.
 
-A few resources to get you started if this is your first Flutter project:
+For more details , refer to our [KB](https://www.syncfusion.com/kb/11729/how-to-add-a-special-region-dynamically-using-ontap-onviewchanged-callbacks-of-the-flutter) documentation.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Requirements to run the demo
+* [VS Code](https://code.visualstudio.com/download)
+* [Flutter SDK v1.22+](https://flutter.dev/docs/development/tools/sdk/overview)
+* [For more development tools](https://flutter.dev/docs/development/tools/devtools/overview)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## How to run this application
+To run this application, you need to first clone or download the ‘create a flutter maps widget in 10 minutes’ repository and open it in your preferred IDE. Then, build and run your project to view the output.
+
+## Further help
+For more help, check the [Syncfusion Flutter documentation](https://help.syncfusion.com/flutter/introduction/overview),
+ [Flutter documentation](https://flutter.dev/docs/get-started/install).
