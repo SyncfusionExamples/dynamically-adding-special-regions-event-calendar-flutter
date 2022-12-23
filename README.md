@@ -6,6 +6,8 @@ You can add special regions to the Flutter Event Calendar by using the [onViewCh
 
 In this sample, the special regions are added to the tapped or long pressed time slots by using the Flutter calendar's 'onViewChanged,' 'onTap,' and 'onpressed' callbacks.
 
+![SpecialRegion](https://user-images.githubusercontent.com/46158936/209288969-d35423e2-6938-4327-99ff-b59cd0b3fe10.jpeg)
+
 For more details , refer to our [KB](https://www.syncfusion.com/kb/11729/how-to-add-a-special-region-dynamically-using-ontap-onviewchanged-callbacks-of-the-flutter) documentation.
 
 ## Requirements to run the demo
