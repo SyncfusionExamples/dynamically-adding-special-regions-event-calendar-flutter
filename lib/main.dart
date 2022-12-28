@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:syncfusion_flutter_calendar/calendar.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatefulWidget {
+  const MyApp({super.key});
+
   @override
   AppState createState() => AppState();
 }
 
 class AppState extends State<MyApp> {
-  final List<TimeRegion>? _specialTimeRegions = <TimeRegion>[];
+  final List<TimeRegion> _specialTimeRegions = <TimeRegion>[];
 
   @override
   void initState() {
@@ -37,14 +38,14 @@ class AppState extends State<MyApp> {
   }
 
   void _getTimeRegions() {
-    _specialTimeRegions!.add(TimeRegion(
+    _specialTimeRegions.add(TimeRegion(
         startTime: DateTime(2020, 5, 29, 09, 0, 0),
         endTime: DateTime(2020, 5, 29, 10, 0, 0),
         recurrenceRule: 'FREQ=WEEKLY;INTERVAL=1;BYDAY=SAT,',
         text: 'Special Region',
         color: Colors.red,
         enablePointerInteraction: true,
-        textStyle: TextStyle(
+        textStyle: const TextStyle(
           color: Colors.black,
           fontStyle: FontStyle.italic,
           fontSize: 10,
@@ -52,31 +53,31 @@ class AppState extends State<MyApp> {
   }
 
   void calendarTapped(CalendarTapDetails calendarTapDetails) {
-    _specialTimeRegions!.add(TimeRegion(
+    _specialTimeRegions.add(TimeRegion(
       startTime: calendarTapDetails.date!,
-      endTime: calendarTapDetails.date!.add(Duration(hours: 1)),
+      endTime: calendarTapDetails.date!.add(const Duration(hours: 1)),
       text: 'Added via calendar tap callback',
-      color: Color(0xffbD3D3D3),
+      color: const Color(0xffbD3D3D3),
     ));
     setState(() {});
   }
 
   void longPressed(CalendarLongPressDetails calendarLongPressDetails) {
-    _specialTimeRegions!.add(TimeRegion(
+    _specialTimeRegions.add(TimeRegion(
       startTime: calendarLongPressDetails.date!,
-      endTime: calendarLongPressDetails.date!.add(Duration(hours: 1)),
+      endTime: calendarLongPressDetails.date!.add(const Duration(hours: 1)),
       text: 'Added via long press callback',
-      color: Color(0xffbD3D3D3),
+      color: const Color(0xffbD3D3D3),
     ));
     setState(() {});
   }
 
   void viewChanged(ViewChangedDetails viewChangedDetails) {
-    _specialTimeRegions!.add(TimeRegion(
+    _specialTimeRegions.add(TimeRegion(
       startTime: viewChangedDetails.visibleDates[0],
-      endTime: viewChangedDetails.visibleDates[0].add(Duration(hours: 1)),
+      endTime: viewChangedDetails.visibleDates[0].add(const Duration(hours: 1)),
       text: 'Added via view changed callback',
-      color: Color(0xffbD3D3D3),
+      color: const Color(0xffbD3D3D3),
     ));
   }
 }
